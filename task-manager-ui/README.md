@@ -1,16 +1,43 @@
-# React + Vite
+# Task Manager — React Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React frontend for the Task Manager assessment, built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
+- User registration and login.
+- Authentication using Laravel Sanctum API tokens.
+- Create, view, edit, and delete tasks.
+- Filter tasks by status.
+- Pagination for task listings.
+- Role-based task visibility for users and administrators.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Requirements
+- Node.js and npm.
+- Laravel backend running locally.
 
-## React Compiler
+## Setup
+1. Install dependencies:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+   ```bash
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+2. Start the development server:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   ```bash
+   npm run dev
+   ```
+
+3. Open the local URL displayed in the terminal.
+
+## Backend Configuration
+The Vite development server proxies `/api` requests to `http://127.0.0.1:8000`. Start the Laravel backend using:
+
+```bash
+php artisan serve
+```
+
+## Technology
+- React
+- Vite
+- JavaScript
+- CSS
